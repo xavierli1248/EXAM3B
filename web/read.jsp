@@ -1,17 +1,30 @@
-<%-- 
-    Document   : read
-    Created on : Dec 11, 2016, 6:48:05 AM
-    Author     : XavierLi1248
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Customers Database</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
+    
+    <% String table = (String) request.getAttribute("table"); %>
+    
     <body>
-        <h1>Hello World!</h1>
+                <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            <hr/>
+            <%@ include file="includes/menu.jsp" %>
+            <hr/>
+        
+            <div class="main">
+        <h1>Customers</h1>
+        <%= table %>
+        
+        </div>
+        <hr/>
+        <%@ include file="includes/footer.jsp" %>
+        
+        </div>
     </body>
 </html>
