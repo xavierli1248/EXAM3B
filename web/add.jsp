@@ -10,9 +10,8 @@
         <h1>Add A New Customer</h1>
         <hr/>
         <a href="index.jsp" id="current">Home</a>
-        <br><br>
-        <h2>Blue Fields are Required.</h2>
         <br>
+        <h2>Blue Fields are Required.</h2>
         <form name="addForm" action="addCustomer" method="get">
             
             <label>First Name:</label>

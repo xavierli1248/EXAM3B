@@ -1,7 +1,7 @@
 <div class="header">
     
     <div class="headerImg">
-        <img src="includes/logoSoftwareDesign.png" height="150px" />
+        <img src="includes/logo.png" height="150" />
     </div>
     
     <div class="headerText">

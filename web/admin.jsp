@@ -6,11 +6,8 @@
         <title>Customers Database</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
-    
-    <% String table = (String) request.getAttribute("table"); %>
-    
     <body>
-                <div class="wrap">
+        <div class="wrap">
             
             <%@ include file="includes/header.jsp" %>
             <hr/>
@@ -18,10 +15,9 @@
             <hr/>
         
             <div class="main">
-        <h1>Customers</h1>
-        <%= table %>      
-        
-        </div>
+                <h1>Customers Database</h1>
+                
+            </div>
         <hr/>
         <%@ include file="includes/footer.jsp" %>
         

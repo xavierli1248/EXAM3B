@@ -13,9 +13,8 @@
         <h1>Update A Customer</h1>
         <hr>
         <a href="index.jsp" id="current">Home</a>
-        <br><br>
-        <h2>Blue Fields are Required.</h2>
         <br>
+        <h2>Blue Fields are Required.</h2>
         <form name="updateForm" action="updateCustomer" method="get">
             
             <label>Customer ID:</label>

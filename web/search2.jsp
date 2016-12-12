@@ -9,10 +9,10 @@
     <body>
         <h1>Search Customers</h1>
         <hr>
-        <a href="admin.jsp" id="current">Home</a>
+        <a href="index.jsp" id="current">Home</a>
         <br>
         <h2>Blue Fields are Required.</h2>
-        <form name="searchForm" action="search" method="get">
+        <form name="searchForm" action="search2" method="get">
 
             <input type="text" name="searchVal" value="" Required/>
 

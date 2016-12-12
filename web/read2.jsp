@@ -7,19 +7,19 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     
-    <% String table = (String) request.getAttribute("table"); %>
+    <% String table2 = (String) request.getAttribute("table2"); %>
     
     <body>
                 <div class="wrap">
             
             <%@ include file="includes/header.jsp" %>
             <hr/>
-            <%@ include file="includes/menu2.jsp" %>
+            <%@ include file="includes/menu1.jsp" %>
             <hr/>
         
             <div class="main">
         <h1>Customers</h1>
-        <%= table %>      
+        <%= table2 %>      
         
         </div>
         <hr/>
