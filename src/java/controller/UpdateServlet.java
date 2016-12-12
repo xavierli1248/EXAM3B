@@ -75,26 +75,26 @@ public class UpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-         int custID = Integer.parseInt(request.getParameter("id"));
-         String fname = request.getParameter("fname");
-         String lname = request.getParameter("lname");
+         int custID = Integer.parseInt(request.getParameter("custID"));
+         String firstName = request.getParameter("firstName");
+         String lastName = request.getParameter("lastName");
          String addr1 = request.getParameter("addr1");
          String addr2 = request.getParameter("addr2");
          String city = request.getParameter("city");
          String state = request.getParameter("state");
          String zip = request.getParameter("zip");
-         String eaddr = request.getParameter("eaddr");
+         String emailAddr = request.getParameter("emailAddr");
          
          Customers customer = new Customers();
          customer.setCustID(custID);
-         customer.setFirstName(fname);
-         customer.setLastName(lname);
+         customer.setFirstName(firstName);
+         customer.setLastName(lastName);
          customer.setAddr1(addr1);
          customer.setAddr2(addr2);
          customer.setCity(city);
-         customer.setState(state);
+         customer.setState1(state);
          customer.setZip(zip);
-         customer.setEmailAddr(eaddr);
+         customer.setEmailAddr(emailAddr);
          
          UpdateQuery uq = new UpdateQuery();
          uq.doUpdate(customer);

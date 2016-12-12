@@ -93,7 +93,7 @@ public class AddServlet extends HttpServlet {
             customer.setAddr1(addr1);
             customer.setAddr2(addr2);
             customer.setCity(city);
-            customer.setState(state);
+            customer.setState1(state);
             customer.setZip(zip);
             customer.setEmailAddr(eaddr);
             

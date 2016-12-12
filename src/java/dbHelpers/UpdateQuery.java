@@ -49,7 +49,7 @@ public class UpdateQuery {
     public void doUpdate (Customers customer) {
         
         try {
-            String query = "UPDATE customers SET firstName = ?, lastName = ?, addr1 = ?, addr2 = ?, city = ?, state = ?, zip = ?, emailAddr = ? WHERE custID = ?";
+            String query = "UPDATE customers SET firstName = ?, lastName = ?, addr1 = ?, addr2 = ?, city = ?, state1 = ?, zip = ?, emailAddr = ? WHERE custID = ?";
             
             PreparedStatement ps = conn.prepareStatement(query);
             
@@ -58,9 +58,10 @@ public class UpdateQuery {
             ps.setString(3, customer.getAddr1());
             ps.setString(4, customer.getAddr2());
             ps.setString(5, customer.getCity());
-            ps.setString(6, customer.getState());
+            ps.setString(6, customer.getState1());
             ps.setString(7, customer.getZip());
             ps.setString(8, customer.getEmailAddr());
+            ps.setInt(9, customer.getCustID());
             
             ps.executeUpdate();
         } catch (SQLException ex) {

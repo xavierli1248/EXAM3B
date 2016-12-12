@@ -19,7 +19,7 @@
         
             <div class="main">
         <h1>Customers</h1>
-        <%= table %>
+        <%= table %>      
         
         </div>
         <hr/>

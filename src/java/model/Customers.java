@@ -9,7 +9,7 @@ public class Customers {
     private String addr1;
     private String addr2;
     private String city;
-    private String state;
+    private String state1;
     private String zip;
     private String emailAddr;
     
@@ -20,19 +20,19 @@ public class Customers {
         this.addr1 = "";
         this.addr2 = "";
         this.city = "";
-        this.state = "";
+        this.state1 = "";
         this.zip = "";
         this.emailAddr = "";
     }
     
-        public Customers(int custID, String firstName, String lastName, String addr1, String addr2, String city, String state, String zip, String emailAddr) {
+        public Customers(int custID, String firstName, String lastName, String addr1, String addr2, String city, String state1, String zip, String emailAddr) {
         this.custID = custID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.addr1 = addr1;
         this.addr2 = addr2;
         this.city = city;
-        this.state = state;
+        this.state1 = state1;
         this.zip = zip;
         this.emailAddr = emailAddr;
     }
@@ -85,12 +85,12 @@ public class Customers {
         this.city = city;
     }
     
-    public String getState() {
-        return state;
+    public String getState1() {
+        return state1;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setState1(String state1) {
+        this.state1 = state1;
     }
     
     public String getZip() {
@@ -111,7 +111,7 @@ public class Customers {
 
     @Override
     public String toString() {
-        return "Customers{" + "custID=" + custID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", addr2=" + addr2 + ", city=" + city + ", state=" + state + ", zip=" + zip + ", emailAddr=" + emailAddr + '}';
+        return "Customers{" + "custID=" + custID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", addr2=" + addr2 + ", city=" + city + ", state=" + state1 + ", zip=" + zip + ", emailAddr=" + emailAddr + '}';
     }
 
     

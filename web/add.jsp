@@ -11,31 +11,33 @@
         <hr/>
         <a href="index.jsp" id="current">Home</a>
         <br><br>
+        <h2>Blue Fields are Required.</h2>
+        <br>
         <form name="addForm" action="addCustomer" method="get">
             
             <label>First Name:</label>
-            <input type="text" name="fname" value="" />
+            <input type="text" name="fname" value="" Required/>
             <br>
             <label>Last Name:</label>
-            <input type="text" name="lname" value="" />
+            <input type="text" name="lname" value="" Required/>
             <br>
             <label>Address Line 1:</label>
-            <input type="text" name="addr1" value="" />
+            <input type="text" name="addr1" value="" Required/>
             <br>
             <label>Address Line 2:</label>
             <input type="text" name="addr2" value="" />
             <br>
             <label>City:</label>
-            <input type="text" name="city" value="" />
+            <input type="text" name="city" value="" Required/>
             <br>
             <label>State:</label>
-            <input type="text" name="state" value="" />
+            <input type="text" name="state" value="" Required/>
             <br>
             <label>Zip:</label>
-            <input type="text" name="zip" value="" />
+            <input type="text" name="zip" value="" Required/>
             <br>
             <label>Email Address:</label>
-            <input type="text" name="eaddr" value="" />
+            <input type="text" name="eaddr" value="" Required/>
             <br>
             <input type="reset" name="reset" value="Clear" />
             <input type="submit" name="submit" value="Submit" />

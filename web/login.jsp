@@ -11,7 +11,7 @@
             
             <%@ include file="includes/header.jsp" %>
             <hr/>
-            <%@ include file="includes/menu1.jsp" %>
+            <%@ include file="includes/menu2.jsp" %>
             <hr/>
         
             <div class="main">

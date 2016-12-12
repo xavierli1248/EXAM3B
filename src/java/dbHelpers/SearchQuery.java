@@ -48,13 +48,13 @@ public class SearchQuery {
         }
     }
     
-    public void doSearch(String firstName, String lastName){
+    public void doSearch(String customerName){
         
         try {
-            String query = "SELECT * FROM basketballplayer WHERE UPPER(firstName) LIKE ? or UPPER(lastName) LIKE ? ORDER BY playerID ASC";
+            String query = "SELECT * FROM customers WHERE UPPER(CONCAT(firstName, lastName)) LIKE ? ORDER BY custID ASC";
             
             PreparedStatement ps = conn.prepareStatement(query);
-            ps.setString(1, "%" + firstName.toUpperCase() + lastName.toUpperCase() + "%");
+            ps.setString(1, "%" + customerName.toUpperCase() + "%");
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
@@ -118,7 +118,7 @@ public class SearchQuery {
                 customer.setAddr1(this.results.getString("addr1"));
                 customer.setAddr2(this.results.getString("addr2"));
                 customer.setCity(this.results.getString("city"));
-                customer.setState(this.results.getString("state"));
+                customer.setState1(this.results.getString("state1"));
                 customer.setZip(this.results.getString("zip"));
                 customer.setEmailAddr(this.results.getString("emailAddr"));
                 
@@ -149,7 +149,7 @@ public class SearchQuery {
                 table += "</td>";
                 
                 table += "<td>";
-                table += customer.getState();
+                table += customer.getState1();
                 table += "</td>";
                 
                 table += "<td>";
