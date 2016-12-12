@@ -9,7 +9,7 @@
     <body>
         <h1>Add A New Customer</h1>
         <hr/>
-        <a href="index.jsp" id="current">Home</a>
+        <a href="admin.jsp" id="current">Home</a>
         <br>
         <h2>Blue Fields are Required.</h2>
         <form name="addForm" action="addCustomer" method="get">
